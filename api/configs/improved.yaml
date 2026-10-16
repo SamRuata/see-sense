@@ -1,0 +1,15 @@
+# THE IMPROVED MODEL. Five techniques on at once: augmentation, batch norm,
+# dropout, weight decay, cosine LR schedule.
+name: improved
+arch: improved
+activation: relu
+batch_norm: true
+dropout: 0.3
+augmentation: true
+weight_decay: 0.0001
+lr_schedule: cosine
+seed: 42
+epochs: 12
+batch_size: 128
+lr: 0.001
+notes: "All five improvement techniques enabled."

@@ -1,0 +1,16 @@
+# REFERENCE. Two conv blocks, ReLU, max-pool, linear head. No augmentation, no
+# batch norm, no dropout, no weight decay, no schedule. ~50k params.
+# Everything else is measured against this.
+name: baseline
+arch: baseline
+activation: relu
+batch_norm: false
+dropout: 0.0
+augmentation: false
+weight_decay: 0.0
+lr_schedule: null
+seed: 42
+epochs: 12
+batch_size: 128
+lr: 0.001
+notes: "Reference: 2 conv blocks, no regularization."

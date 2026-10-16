@@ -1,0 +1,14 @@
+# ABLATION: constant LR instead of cosine decay, everything else as `improved`.
+name: improved_no_sched
+arch: improved
+activation: relu
+batch_norm: true
+dropout: 0.3
+augmentation: true
+weight_decay: 0.0001
+lr_schedule: null
+seed: 42
+epochs: 12
+batch_size: 128
+lr: 0.001
+notes: "Ablation: constant learning rate, no cosine schedule."

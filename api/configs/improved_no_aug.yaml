@@ -1,0 +1,14 @@
+# ABLATION: augmentation off, everything else as `improved`.
+name: improved_no_aug
+arch: improved
+activation: relu
+batch_norm: true
+dropout: 0.3
+augmentation: false
+weight_decay: 0.0001
+lr_schedule: cosine
+seed: 42
+epochs: 12
+batch_size: 128
+lr: 0.001
+notes: "Ablation: no augmentation."

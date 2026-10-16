@@ -1,0 +1,17 @@
+# ARCHITECTURE ONLY. The improved three-block network with every improvement
+# technique switched OFF. Isolates what the deeper, wider architecture is worth
+# on its own, so the baseline -> improved gain can be split into "capacity" and
+# "regularization" instead of being reported as one number.
+name: improved_plain
+arch: improved
+activation: relu
+batch_norm: false
+dropout: 0.0
+augmentation: false
+weight_decay: 0.0
+lr_schedule: null
+seed: 42
+epochs: 12
+batch_size: 128
+lr: 0.001
+notes: "Improved architecture, all techniques off. Isolates capacity."
