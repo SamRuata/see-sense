@@ -1,12 +1,12 @@
 # See-Sense — A Vision-Classification Service with Explanations
 
 **Name:** Lal Ruata
-**Course / Section:** CST-435 [SECTION]
+**Course / Section:** CST-435 
 **GitHub:** https://github.com/SamRuata/see-sense
 **Streamlit Cloud (UI):** https://see-sense-wa4u2xnbp5mmxsrvc42esn.streamlit.app/
-**Render.com (API):** https://see-sense-api-ojye.onrender.com, health check at [`/healthz`](https://see-sense-api-ojye.onrender.com/healthz)
+**Render.com (API):** https://see-sense-api-ojye.onrender.com/docs, health check at [`/healthz`](https://see-sense-api-ojye.onrender.com/healthz)
 **Supabase project ref:** `utylyaxgubafjhyqcvnk`
-**Product presentation (video):** [https://youtu.be/CKwVW97GLkM]
+**Product presentation (video):** https://youtu.be/CKwVW97GLkM
 **Engineering report:** below, in this README
 **Model card:** [`MODEL_CARD.md`](MODEL_CARD.md) · **Dataset card:** [`DATASET_CARD.md`](DATASET_CARD.md)
 
