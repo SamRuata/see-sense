@@ -1,0 +1,33 @@
+# THE MODEL THE ABLATIONS POINT TO.
+#
+# The seven-run comparison showed, at this 12-epoch budget:
+#   batch norm        +1.64 pts   (keep)
+#   cosine schedule   +0.66 pts   (keep)
+#   dropout           -0.37 pts   (drop)
+#   augmentation      -1.16 pts   (drop)
+#   extra capacity    -0.16 pts   (kept anyway: BN needs somewhere to work,
+#                                  and the depth is what the receptive-field
+#                                  discussion is about)
+#
+# So this config keeps the two techniques that earned their place, keeps weight
+# decay as a cheap and non-harmful regularizer, and drops the two that cost
+# accuracy. Three improvement techniques remain (batch norm, weight decay,
+# LR scheduling), which still satisfies the brief's "at least three".
+#
+# Augmentation is not wrong in general -- it is wrong HERE, at a fixed short
+# budget, because it makes every epoch's task harder and only repays that cost
+# over longer training the matched budget does not allow. Worth saying plainly
+# in the report rather than quietly omitting.
+name: improved_v2
+arch: improved
+activation: relu
+batch_norm: true
+dropout: 0.0
+augmentation: false
+weight_decay: 0.0001
+lr_schedule: cosine
+seed: 42
+epochs: 12
+batch_size: 128
+lr: 0.001
+notes: "Ablation-guided: batch norm + weight decay + cosine. No augmentation, no dropout."

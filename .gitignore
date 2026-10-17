@@ -17,3 +17,5 @@ venv/
 
 data/*
 !data/gallery.npz
+!data/compare_gallery.json
+.streamlit/secrets.toml
