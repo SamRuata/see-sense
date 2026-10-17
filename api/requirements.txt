@@ -9,3 +9,4 @@ numpy==1.26.4
 pillow==10.4.0
 supabase==2.7.4
 python-dotenv==1.0.1
+joblib==1.6.0
